@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  font-family: cursive;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero {
+  background-color: rgb(27, 29, 29);
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  color: aliceblue;
+  overflow: hidden;
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 8%;
+}
+nav .menu {
+  cursor: pointer;
+  margin-right: 20px;
+  width: 25px;
+}
+nav .logo {
+  cursor: pointer;
+  width: 160px;
+}
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+button {
+  background-color: aliceblue;
+  border-radius: 20px;
+  width: 55px;
+  height: 25px;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  margin-left: 20px;
+  transition: background-color 0.5s;
+}
+button span {
+  display: block;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin-left: 2px;
+  transition: background-color 0.5s, margin-left 0.5s;
+}
+.lamp-container {
+  position: absolute;
+  top: -20px;
+  left: 22%;
+  width: 200px;
+}
+.lamp {
+  width: 100%;
+}
+.light {
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  margin-left: -10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.text-container {
+  max-width: 600px;
+  margin-top: 7%;
+  margin-left: 50%;
+}
+.text-container h1 {
+  font-size: 80px;
+  font-weight: 400;
+}
+.text-container a {
+  text-decoration: none;
+  background-color: rgb(6, 54, 11);
+  padding: 14px 40px;
+  display: inline-block;
+  color: aliceblue;
+  font-size: 18px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+.control .line {
+  width: 250px;
+  height: 4px;
+  background-color: aliceblue;
+  margin: 0 20px;
+  border-radius: 2px;
+}
+.control .line span {
+  width: 50%;
+  height: 8px;
+  background-color: rgb(6, 54, 11);
+  margin-top: -2px;
+  border-radius: 4px;
+  display: block;
+}
+.active {
+  background-color: rgb(6, 54, 11);
+}
+.active span {
+  background-color: aliceblue;
+  margin-left: 30px;
+}
+.on {
+  opacity: 1;
+}
